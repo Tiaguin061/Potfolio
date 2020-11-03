@@ -1,0 +1,313 @@
+.home {
+    max-width: 1400px;
+    margin: 120px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.home .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;  
+}
+
+.home .about .apresentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home .about .apresentation img {
+    width: 240px;
+    height: 240px;
+    padding: 8px;
+    border-radius: 50%;
+    text-align: center;
+    border: 4px solid var(--color-blue);
+}
+.home .about .apresentation h1 {
+    margin-top: 24px;
+    color: #d3e4ff;
+    font-size: 32px;
+}
+
+/* textsAbout */
+.home .about .textsAbout {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.home .about .textsAbout h1 {
+    font-size: 42px;
+    letter-spacing: 0.7pt;
+    color: var(--color-blue);
+}
+
+.colorEdit {
+    color:  var(--color-orange);
+}
+
+.home .about .textsAbout p {
+    max-width: 500px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 300;
+    filter: brightness(96%);
+    letter-spacing: 0.7pt;
+    text-align: left;
+}
+.home .about .textsAbout p .colorEdit {
+    color: var(--color-blue);
+}
+
+/* Tragetory in programation */
+.home .tragetory {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 24px 0 12px;
+    border-top: 1px solid rgb(39, 39, 44);
+    letter-spacing: 0.7pt;
+}
+
+.home .tragetory .history {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.home .tragetory .history h1 {
+    font-size: 52px;
+    padding-left: 16px;
+    filter: brightness(90%);
+    border-left: 4px solid #d3e4ff;
+    max-width: 360px;
+    width: 100%;
+}
+
+.home .tragetory .history p {
+    font-size: 20px;
+    margin-top: 2rem;
+    text-align: left;
+    max-width: 460px;
+    width: 100%;
+}
+
+/* My github and contact for me */
+/* .home .devGit .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid rgb(39, 39, 44);
+}
+
+.home .devGit .contact a {
+    padding: 8px 12px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 8px 8px 0 0;
+    transition: 0.3s;
+}
+
+.home .devGit .contact a:hover {
+    color: var(--color-orange);
+}
+
+.home .devGit .contact img {
+    max-width: 400px;
+    width: 100%;
+} */
+
+.home .devGit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.7pt;
+    max-width: 600px;
+}
+.home .devGit img{
+    max-width: 600px;
+    width: 100%;
+}
+
+.home .devGit h1 {
+    margin-top: 1rem;
+    font-size: 38px;
+    font-weight: 800;
+    max-width: 500px;    
+    text-align: left;
+    width: 100%;
+}
+
+.home .devGit h1 .colorEdit {
+    position: relative;
+}
+
+.home .devGit h1 .colorEdit::after {
+    content: "";
+    width: 70%;
+    height:2px;
+    left: 25px;
+    bottom: 1px;
+    position: absolute;
+    background: var(--color-orange);
+}
+
+.home .devGit p {
+    margin-top: 1rem;
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.home .devGit .socialIcons {
+    padding: 14px 26px;
+    margin-top: 1rem;
+    background: rgb(40, 40, 46);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.home .devGit .socialIcons:hover {
+    background: rgb(35, 35, 41);
+    color: var(--color-orange);
+}
+
+.home .devGit .socialIcons .icon {
+    margin-right: 8px;
+}
+
+/* Languages */
+.home .languagesProgramation {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 0 48px;
+    margin-top: 48px;
+    border-top: 1px solid rgb(39, 39, 44);
+}
+
+.home .languagesProgramation .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.home .languagesProgramation .cards .card {
+    padding: 36px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius:5px 5px 0px 0px;
+    background: rgb(32, 32, 36);
+    border-bottom: 1px solid red;
+    transition: 0.2s;
+}
+
+.home .languagesProgramation .cards .card:hover {
+    filter: brightness(120%);
+}
+
+.home .languagesProgramation .cards .card h1 {
+    word-wrap: break-word;
+    text-align: center;
+    max-width: 160px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.home .languagesProgramation .cards .card i {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    font-size: 70px;
+    background: #d3e4ff;
+    color: black;
+}
+
+.h1editLanguages {
+    margin: 3rem 0 2rem;
+}
+
+/* Cards modicado */
+.languagesProgramation .cards .card.js i {
+    background:var(--color-js);
+}
+
+.languagesProgramation .cards .card.js {
+    border-bottom: 1px solid var(--color-js);
+}
+
+.languagesProgramation .cards .card.node i {
+    background: var(--color-node);
+}
+
+.languagesProgramation .cards .card.node {
+    border-bottom: 1px solid var(--color-node);
+}
+
+.languagesProgramation .cards .card.html i {
+    background: var(--color-html);
+}
+
+.languagesProgramation .cards .card.html {
+    border-bottom: 1px solid var(--color-html);
+}
+
+.languagesProgramation .cards .card.css i {
+    background: var(--color-css);
+}
+
+.languagesProgramation .cards .card.css {
+    border-bottom: 1px solid var(--color-css);
+}
+
+.languagesProgramation .cards .card.postgres i {
+    background: var(--color-postgres);
+}
+
+.languagesProgramation .cards .card.postgres {
+    border-bottom: 1px solid var(--color-postgres);
+}
+
+.languagesProgramation .cards .card.react i {
+    background: var(--color-react);
+}
+
+.languagesProgramation .cards .card.react {
+    border-bottom: 1px solid var(--color-react);
+}
+
+.languagesProgramation .cards .card.rn i {
+    background: var(--color-rn);
+}
+
+.languagesProgramation .cards .card.rn {
+    border-bottom: 1px solid var(--color-rn);
+}
