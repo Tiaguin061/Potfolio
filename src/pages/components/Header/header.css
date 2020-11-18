@@ -2,7 +2,7 @@
 
 header.header {
     width: 100%;
-    background: rgb(32, 32, 36);
+    background: rgb(9, 9, 10);
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -25,25 +25,28 @@ header.header .logo {
 }
 
 header.header .logo:hover h1 {
-    color: var(--color-blue);
+    color: rgb(228, 228, 228);
 }
 
 header.header .logo:hover h2 {
-    color:  rgb(228, 228, 228);
+    color: var(--color-orange);
 }
 
 header.header .logo h1 {
     font-size: 28px;
-    color:   rgb(228, 228, 228);
-    transition: all 0.3s;
+    color: var(--color-orange);
+    transition: all 0.6s;
     font-weight: 600;
+    font-family:'IBM Plex Serif', sans-serif;
 }
 
 header.header .logo h2 {
     font-size: 16px;
     margin-left: 4px;    
-    color: var(--color-blue);
+    color: rgb(228, 228, 228);
     font-weight: 600;
+    transition: all 0.3s;
+    font-family:'IBM Plex Serif', sans-serif;
 }
 
 /* navigation */
@@ -52,15 +55,13 @@ header.header .bgHeader .navigation a{
     font-weight: 600;
     margin: 16px;
     border-radius: 8px;
-    color: var(--color-orange);
-    border-left: 1px solid var(--color-orange);
+    color: rgb(228, 228, 228);
     border-bottom: 2px solid var(--color-orange);
     padding: 8px;
     transition: all 0.2s;
 }
 
 header.header .bgHeader .navigation a:hover {
-    color: rgb(228, 228, 228);
-    border-left: 1px solid  rgb(228, 228, 228);
-    border-bottom: 2px solid rgb(228, 228, 228);
+    color: var(--color-orange);
+    border-bottom: 2px solid var(--color-orange);
 }

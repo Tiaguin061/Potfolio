@@ -1,0 +1,60 @@
+.home .SectionMytragetory {
+    width: 100%;
+    padding-top: 3.2rem;
+}
+
+.home .SectionMytragetory .history {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+    margin: 2rem auto 5rem;
+    padding: 0 0 12px;
+}
+
+.home .tragetory {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    letter-spacing: 0.7pt;
+}
+
+.home .tragetory .paragraphs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home .tragetory .paragraphs .img {
+    width: 500px;
+    height: 300px;
+}
+
+.home .tragetory .paragraph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .tragetory img {
+    width: 300px;
+    height: 200px;
+}
+
+.home .tragetory  p {
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    max-width: 460px;
+    width: 100%;
+}
+
+.home .tragetory .paragraph .arrow {
+    font-size: 64px;
+}
+

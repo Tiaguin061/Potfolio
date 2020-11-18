@@ -6,7 +6,7 @@ import './styles/home.css'
 function App() {
 	return (
 		<div className="page">
-			<Header />
+			<Header />s
 			<Home />
 		</div>
 	);

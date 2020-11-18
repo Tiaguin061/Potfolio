@@ -11,9 +11,9 @@ export default function Header() {
                     <h2>Gonçalves</h2>
                 </div>
                 <div className="navigation">
-                    <a href="/">Projetos</a>
-                    <a href="/">Sobre mim</a>
-                    <a href="/">Contato</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#tragetory">Sobre mim</a>
+                    <a href="#contact">Contato</a>
                 </div>
             </div>
         </header>

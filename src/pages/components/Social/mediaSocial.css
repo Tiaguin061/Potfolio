@@ -1,0 +1,134 @@
+.home .devGit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.7pt;
+    max-width: 600px;
+}
+.home .devGit img{
+    max-width: 600px;
+    width: 100%;
+}
+
+.home .devGit h1 {
+    margin-top: 1rem;
+    font-size: 38px;
+    font-weight: 800;
+    max-width: 500px;    
+    text-align: left;
+    width: 100%;
+}
+
+.home .devGit h1 .colorEdit {
+    position: relative;
+}
+
+.home .devGit h1 .colorEdit::after {
+    content: "";
+    width: 70%;
+    height:2px;
+    left: 25px;
+    bottom: 1px;
+    position: absolute;
+    background: var(--color-orange);
+}
+
+.home .devGit p {
+    margin-top: 1rem;
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.home .devGit .socialIcons {
+    padding: 14px 64px;
+    margin-top: 1rem;
+    background: rgb(40, 40, 46);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.home .devGit .socialIcons:hover {
+    background: rgb(12, 12, 14);
+    color: var(--color-orange);
+}
+
+.home .devGit .socialIcons .icon {
+    margin-right: 8px;
+}
+
+.home .media {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+    max-width: 1400px;
+}
+
+.home .social-icons {
+    width: 100%;
+    background: rgb(36, 36, 41);
+}
+
+.home .social-icons .h1edit {
+    border-left: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+    max-width: 100%;
+    width: 90%;
+}
+
+.home .social-icons .h1edit .icon {
+    margin-left: 1rem;
+}
+
+.home .social-icons .social-media {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.home .social-icons .textInCard {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.home .social-icons .textInCard p {
+    margin: 0 0 1.2rem;
+    font-size: 20px;
+    max-width: 480px;
+}
+
+.home .social-icons .cards{
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    gap: 30px;
+}
+
+.home .cards .card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home .social-icons .cards .card {
+    cursor: pointer;
+}
+
+.home .social-icons .cards .card .nameTwo {
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.home .social-icons .cards .card:hover .nameTwo{
+    color: var(--color-orange);
+}
