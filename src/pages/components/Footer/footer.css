@@ -1,0 +1,21 @@
+.myFooter {
+    width: 100%;
+    margin-top: auto;
+    padding: 32px 0;
+}
+
+.myFooter .footer {
+    max-width: 1400px;
+    width: 100%;
+}
+
+.myFooter .footer .itemsFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.myFooter .footer .itemsFooter p {
+    color: var(--color-orange);
+}

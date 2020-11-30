@@ -1,14 +1,16 @@
-import Header from './pages/components/Header/Header.jsx'
-import Home from './pages/Home.jsx'
+import React from 'react'
+import { BrowserRouter} from 'react-router-dom'
+import Routes from './Router/router'
+
 import './styles/global.css'
-import './styles/home.css'
 
 function App() {
 	return (
-		<div className="page">
-			<Header />s
-			<Home />
-		</div>
+		<BrowserRouter>
+			<div className="page">
+				<Routes />
+			</div>
+		</BrowserRouter>
 	);
 }
 

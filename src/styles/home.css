@@ -5,17 +5,24 @@
 }
 
 .home {
-    margin: 120px auto;
+    margin: 120px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column; 
+    position: relative;
 }
 .home .about {
+    width: 100%;  
+}
+
+.home .about .myAbout {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;  
-    width: 100%;  
 }
 
 .home .about .apresentation {
@@ -23,8 +30,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 4px solid var(--color-blue);
-    border-radius: 50%;
 }
 
 .home .about .apresentation img {
@@ -33,6 +38,7 @@
     padding: 8px;
     border-radius: 50%;
     text-align: center;
+    border: 4px solid var(--color-blue);
     object-fit:cover;
 }
 
@@ -51,10 +57,10 @@
     margin-left: 60px;
 }
 
-.home .about .textsAbout h1 {
+.home .about .textsAbout h1.colorEdit {
     font-size: 42px;
     letter-spacing: 0.7pt;
-    color: var(--color-blue);
+    color: var(--color-orange);
 }
 
 .colorEdit {
@@ -69,9 +75,11 @@
     filter: brightness(96%);
     letter-spacing: 0.7pt;
     text-align: left;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(44, 44, 49);
 }
 .home .about .textsAbout p .colorEdit {
-    color: var(--color-blue);
+    color: var(--color-orange);
 }
 
 /* Languages */
@@ -79,7 +87,7 @@
     padding: 16px 0 48px;
     margin-top: 1rem;
     width: 100%;
-    background: rgb(36, 36, 41);
+    background: rgb(24, 24, 27);
 }
 
 .home .languagesProgramation {
@@ -95,7 +103,7 @@
 /* Languages and social-icons */
 .home .cards {
     display: grid;
-    grid-template-columns: repeat(4, 220px);
+    grid-template-columns: repeat(4, minmax(200px, 2fr));
     gap: 30px;
 }
 
@@ -156,8 +164,64 @@
     max-width: 34.5rem;
     min-height: 9.25rem;
     margin: 24px auto 0;
-    padding-top: 24px;
+    padding-top: 1rem;
     letter-spacing: 0.9pt;
-    border-top: 1px solid rgb(44, 44, 49);
+    color: var(--color-blue);
 }
 
+/* Responsive */
+@media (max-width: 1100px) {
+    .home .cards {
+        grid-template-columns: repeat(3, minmax(200px, 2fr));
+    }
+
+    .home .about .myAbout {
+        flex-direction: column;
+    }
+
+    .home .about .textsAbout {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    .home .cards {
+        grid-template-columns: repeat(2, minmax(200px, 2fr));
+    }
+
+    .home .about .textsAbout {
+        width: 100%;
+    }
+
+    .home .about .textsAbout h1.colorEdit, .devMessage.machineEfect {
+        text-align: center;
+        font-size: 2.4rem;
+        max-width: 94%;
+        width: 100%;
+    }
+    .home .about .textsAbout p  {
+        font-size: 1.1rem;
+        width: 94%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .cards {
+        grid-template-columns: repeat(1, minmax(100px, 2fr));
+    }
+
+    .home .about .apresentation img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .devMessage.machineEfect {
+        font-size: 32px;
+    }
+
+    .home .languagesProgramation .cardsDomination,
+    .home .languagesProgramation .cardsLearning {
+        width: 80%;
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 
 // icons 
-import  {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
+import  { AiFillLinkedin} from 'react-icons/ai'
 import {FiInstagram} from 'react-icons/fi'
 import {FaDiscord} from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'

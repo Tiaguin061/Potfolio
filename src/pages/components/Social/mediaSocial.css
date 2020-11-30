@@ -1,10 +1,11 @@
 .home .devGit {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     letter-spacing: 0.7pt;
-    max-width: 600px;
+    flex-direction: row;
+    max-width: 1400px;
+    gap: 40px;
 }
 .home .devGit img{
     max-width: 600px;
@@ -36,13 +37,13 @@
 
 .home .devGit p {
     margin-top: 1rem;
-    font-size: 20px;
+    font-size: 22px;
     max-width: 500px;
 }
 
 .home .devGit .socialIcons {
     padding: 14px 64px;
-    margin-top: 1rem;
+    margin: 1rem auto 0;
     background: rgb(40, 40, 46);
     border-radius: 12px;
     display: flex;
@@ -50,6 +51,7 @@
     align-items: center;
     font-size: 18px;
     transition: 0.3s;
+    width: 80%;
 }
 
 .home .devGit .socialIcons:hover {
@@ -61,6 +63,13 @@
     margin-right: 8px;
 }
 
+/* Social media */
+
+.home .social-icons {
+    width: 100%;
+    background: rgb(24, 24, 27);
+}
+
 .home .media {
     width: 100%;
     margin: 0 auto;
@@ -68,19 +77,14 @@
     max-width: 1400px;
 }
 
-.home .social-icons {
-    width: 100%;
-    background: rgb(36, 36, 41);
-}
-
 .home .social-icons .h1edit {
     border-left: none;
     padding-left: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;   
     max-width: 100%;
-    width: 90%;
+    width: 100%;
 }
 
 .home .social-icons .h1edit .icon {
@@ -88,29 +92,32 @@
 }
 
 .home .social-icons .social-media {
-    display: flex;
-    align-items:flex-start;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
 .home .social-icons .textInCard {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+    margin: 3rem auto 0;
+    width: 100%;
 }
 
 .home .social-icons .textInCard p {
     margin: 0 0 1.2rem;
-    font-size: 20px;
-    max-width: 480px;
+    font-size: 22px;
+    max-width: 520px;
+    word-wrap: break-word;
 }
 
 .home .social-icons .cards{
     display: grid;
-    grid-template-columns: repeat(2, 220px);
-    gap: 30px;
+    grid-template-columns: repeat(4, minmax(200px, 2fr));
+    gap: 30px;    
 }
 
 .home .cards .card a {
@@ -131,4 +138,90 @@
 
 .home .social-icons .cards .card:hover .nameTwo{
     color: var(--color-orange);
+}
+
+/* Responsive */
+@media (max-width: 1500px) {
+    .home .devGit img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .home .social-icons .textInCard {
+        max-width: 1100px;
+        width: 90%;
+    }
+
+    .home .devGit {
+        flex-direction: column;
+    }
+        
+    .home .devGit h1 {
+        text-align: center;
+        width: 90%;
+        margin: 1rem auto 0;
+        font-size: 2rem;
+    }
+
+    .home .social-icons .h1edit {
+        font-size: 26px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto 1rem;
+    }
+        
+    .home .social-icons .textInCard p {
+        margin: 0 auto 1.2rem;
+        width: 90%;
+    }
+        
+    .home .devGit p {
+        width: 90%;
+        font-size: 20px;
+        margin: 1rem auto 0;
+    }
+        
+    .home .social-icons .cards{
+        grid-template-columns: repeat(2, minmax(350px, 2fr));
+    }
+}
+
+@media (max-width: 800px) {
+    .home .social-icons .cards{
+        grid-template-columns: repeat(2, minmax(50px, 2fr));
+    }
+
+    .home .social-icons .textInCard p {
+        font-size: 1.3rem;
+    }
+
+    .home .social-icons .h1edit {
+        display: block;
+    }
+
+    .home .devGit img {
+        max-width: 300px;
+    }
+
+    .home .devGit .socialIcons {
+        padding: 14px 12px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .home .social-icons .cards{
+        grid-template-columns: repeat(1, minmax(50px, 2fr));
+        width: 80%;
+        margin: 0 auto;
+    }
+    .home .social-icons .textInCard p,
+    .home .devGit p {
+        font-size: 1.1rem;
+    }
+
+    .home .social-icons .h1edit .icon{
+        display: none;
+    }
 }

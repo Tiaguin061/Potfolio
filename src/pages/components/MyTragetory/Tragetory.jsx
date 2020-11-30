@@ -14,7 +14,7 @@ export default function Tragetory() {
             <h1 className="h1edit">Um pouco da minha tragetória na Programação</h1>
             <div className="tragetory">
                 <div className="paragraphs">
-                    <div className="paragraph">
+                    <div className="paragraph classResponsive">
                         <img src={codeImg} alt=""/>
                         <p>
                             <BsArrowReturnRight /> No inicio de 2020 eu comecei a ver alguns pequenos vídeos sobre 

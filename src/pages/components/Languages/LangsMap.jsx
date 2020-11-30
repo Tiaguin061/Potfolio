@@ -2,6 +2,7 @@ import React from 'react'
 import {DiHtml5, DiCss3, DiNodejsSmall, DiJavascript1, DiReact, DiPostgresql} from 'react-icons/di'
 
 export function LanguagesDomination() {
+
     const valuesDomination = [
         {
             classNames: 'card js',
@@ -40,17 +41,16 @@ export function LanguagesDomination() {
         },
     ]
 
-    const values = valuesDomination.map((value, index) => {
-        return (
-            <div 
-                key={index}
-                className= {value.classNames} 
-                style={{borderBottom: `${value.borderBottom}`}}>
-                <i style={{background: `${value.backgroundIcon}`}}>{value.icon}</i>
-                <h1>{value.name}</h1>
-            </div>
+    const values = valuesDomination.map((value, index) => (
+        <div 
+            key={index}
+            className= {value.classNames} 
+            style={{borderBottom: `${value.borderBottom}`}}>
+            <i style={{background: `${value.backgroundIcon}`}}>{value.icon}</i>
+            <h1>{value.name}</h1>
+        </div>
         )
-    })
+    )
 
     return values
 }

@@ -11,13 +11,13 @@ header.header {
 header.header .bgHeader {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1400px;
     padding: 16px 24px;
     margin: 0 auto;
 }
 
-header.header .logo {
+header.header .logo a{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -64,4 +64,18 @@ header.header .bgHeader .navigation a{
 header.header .bgHeader .navigation a:hover {
     color: var(--color-orange);
     border-bottom: 2px solid var(--color-orange);
+}
+
+/* Responsive */
+
+.menuResponsive {
+    display: none;
+}
+
+.open {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+
 }
