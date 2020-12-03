@@ -34,3 +34,7 @@ a {
   --color-rn: #5667f9;
   font-size: 1rem;
 }
+
+.page {
+  height: 100vh;
+}

@@ -1,10 +1,10 @@
-import React from 'react';
- 
+import React, {useState, useEffect} from 'react';
+import api from '.././services/api'
 // libs
 import Typical from 'react-typical'
- 
-import '../styles/home.css'
+import { useParams} from 'react-router-dom'
 
+import '../styles/home.css'
 // Images
 import image from '../images/semFoto.png'
 
@@ -16,6 +16,52 @@ import MediaSocial from './components/Social/MediaSocial'
 import Footer from './components/Footer/Footer'
 
 export default function Home() {
+    const [state, setState] = useState({
+        repositorys: [],
+        // user: {},
+    });
+
+    const { id } = useParams();
+
+    useEffect(() => {
+        loadRepository();
+        // loadInformationsMyUser();
+    }, [id]);
+
+    async function loadRepository() {
+        const response = await api.get('https://api.github.com/users/Tiaguin061/repos');
+        const repositorys = response.data;
+        setState({repositorys})
+    }
+    const {repositorys } = state;
+    // async function loadInformationsMyUser() {
+    //     const response = await api.get('https://api.github.com/users/Tiaguin061');
+    //     const user = response.data;
+    //     setState({user});
+    // }
+
+    // const {user} = state;
+    const [value, setValue] = useState(0);
+
+    const onChange = value => {
+    setValue(value);
+    }
+  
+    if(!state) {
+        return (
+        <div className="loading">
+            <Typical
+                steps={[
+                        'Carregando...', 3000,
+                        '...', 2000 
+                    ]} 
+                loop={Infinity}
+                wrapper="p" 
+                className="machineEfect devMessage colorEdit"   
+            />
+        </div>
+        )
+    }
     return (
         <div className="home">
             <Header />
@@ -55,10 +101,24 @@ export default function Home() {
                 <div className="myProjects">
                 </div>
             </section>
+            <section className="myRepositorys">
+                <div className="styleRepository">
+                    <h1>Projetos / Em processo de criação \</h1>
+                    <p>Está feio e responsivo feio.</p>
+                    <div className="repositorys cards">
+                        {repositorys.map((value, index) => (
+                            <div key={index} className="repository card">
+                                <h1>{value.name}</h1>
+                                <p>{value.description}</p>
+                                <a href={value.html_url}>Ver no github</a>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
             <section className="myFooter">
                 <Footer />
             </section>
         </div>
-
     )
 }

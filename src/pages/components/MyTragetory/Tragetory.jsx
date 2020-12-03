@@ -22,7 +22,7 @@ export default function Tragetory() {
                         </p>
                     </div>
                     <div className="paragraph">
-                        <p><BsArrowReturnRight /> Um pouco depois, em março iniciei meus primeiros códicos, que por sinal foram em <span className="colorEdit">Python</span> quando comecei ver aulas do Curso em Video lá no Youtube. Para mim foi perfeito, era algo novo e passei a práticar.</p>
+                        <p><BsArrowReturnRight /> Um pouco depois, em março iniciei meus primeiros códigos, que por sinal foram em <span className="colorEdit">Python</span> quando comecei ver aulas do Curso em Video lá no Youtube. Para mim foi perfeito, era algo novo e passei a práticar.</p>
                     </div>
                     <div className="paragraph">
                         <p>
