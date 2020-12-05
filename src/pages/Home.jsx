@@ -65,7 +65,7 @@ export default function Home() {
     return (
         <div className="home">
             <Header />
-            <section className="about">
+            <section className="about" id="about">
                 <div className="myAbout">
                     <div className="apresentation">
                         <img src={image} alt="Tiago Gonçalves"/>
@@ -87,7 +87,7 @@ export default function Home() {
                 wrapper="h1" 
                 className="machineEfect devMessage colorEdit"   
             />
-            <section className="languages">
+            <section className="languages" id="study">
                 <Langs />
             </section>
 
@@ -101,7 +101,7 @@ export default function Home() {
                 <div className="myProjects">
                 </div>
             </section>
-            <section className="myRepositorys">
+            <section className="myRepositorys" id="projects">
                 <div className="styleRepository">
                     <h1>Projetos / Em processo de criação \</h1>
                     <p>Está feio e responsivo feio.</p>

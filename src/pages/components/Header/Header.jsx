@@ -9,6 +9,7 @@ import {MdArrowForward} from 'react-icons/md';
 const menu = document.querySelector('#menu')
 const getButtonMenuOpen = document.querySelector('.btnMenu_open')
 const getButtonMenuClose = document.querySelector('.btnMenu_close')
+const menu_items = document.querySelectorAll('.menu-item .menu-item-action')
 
 getButtonMenuOpen.addEventListener('click', function() {
     menu.classList.add('menu_open')
@@ -18,10 +19,16 @@ getButtonMenuClose.addEventListener('click', function() {
     menu.classList.remove('menu_open')
 })  
 
+menu_items.forEach((item) => {
+    item.addEventListener('click', () => {
+        menu.classList.remove('menu_open')
+    })
+})
+
 export default function Header() {
     return (
         <header className="header">
-            <div className="bgHeader" id="responsiveId">
+            <div className="bgHeader">
                 <div className="logo">
                     <Link to="/">
                         <h1>Tiago</h1>
@@ -52,7 +59,13 @@ export default function Header() {
                             </a>
                         </li>
                         <li className="menu-item">
-                            <a href="#tragetory" 
+                            <a href="#study"
+                            className="menu-item-action">
+                               <MdArrowForward/> Estudos
+                            </a>
+                        </li>
+                        <li className="menu-item">
+                            <a href="#about" 
                             className="menu-item-action">
                                <MdArrowForward/> Sobre mim
                             </a>
