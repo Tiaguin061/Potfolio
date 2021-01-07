@@ -19,7 +19,7 @@ export default function MediaSocial() {
                         <h1>Já acessou meu 
                             <span className="colorEdit"> GitHub? </span> 
                         </h1>
-                        <p>Se você nunca passou por lá, sugiro que veja, utilizo para postar meus projetos de estudo e próprios, confere lá, é bem interessante. Qualquer dica para melhoria, só entre em contato comigo!
+                        <p>Se você nunca passou por lá, sugiro que veja, utilizo para postar meus projetos de estudo e próprios, confere lá, é bem interessante. Qualquer dica para melhoria, entre em contato comigo!
                         </p>
                         <a href="https://github.com/Tiaguin061" target="_blank" className="socialIcons"><AiFillGithub className="icon"/>Clique aqui</a>
                     </div>
@@ -29,7 +29,7 @@ export default function MediaSocial() {
                         <h1 className="h1edit">Entre em contato comigo <GiLobArrow className="icon"/></h1>
 
                         <p>Venha interagir comigo, estou sempre a disposição para o que vier, abaixo você poderá <span className="colorEdit">clicar em qualquer ícone</span> que será levado ao meu contato. 
-                        <br/>O meu <span className="colorEdit">Gmail</span> e <span className="colorEdit">Discord</span> você pode copiar.
+                        <br/>O meu <span className="colorEdit">Gmail</span> você pode copiar.
                         </p>
                         <div className="cards">
                             <MediaMap />

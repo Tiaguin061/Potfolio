@@ -58,7 +58,7 @@ header.header .logo h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 10px;
 }
 
 .menu-item-action {
@@ -78,14 +78,12 @@ header.header .logo h2 {
     border-radius: 8px;
     text-align:center;
     color: rgb(228, 228, 228);
-    border-bottom: 2px solid var(--color-orange);
     padding: 8px 16px;
     transition: all 0.2s;
 } 
 
 .menu-item-action:hover {
     color: var(--color-orange);
-    border-bottom: 2px solid var(--color-orange);
 }
 
 @media (max-width: 800px) {

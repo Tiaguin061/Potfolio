@@ -6,25 +6,6 @@ import './header.css';
 import {FiMenu} from 'react-icons/fi';
 import {MdArrowForward} from 'react-icons/md';
 
-const menu = document.querySelector('#menu')
-const getButtonMenuOpen = document.querySelector('.btnMenu_open')
-const getButtonMenuClose = document.querySelector('.btnMenu_close')
-const menu_items = document.querySelectorAll('.menu-item .menu-item-action')
-
-getButtonMenuOpen.addEventListener('click', function() {
-    menu.classList.add('menu_open')
-})  
-
-getButtonMenuClose.addEventListener('click', function() {
-    menu.classList.remove('menu_open')
-})  
-
-menu_items.forEach((item) => {
-    item.addEventListener('click', () => {
-        menu.classList.remove('menu_open')
-    })
-})
-
 export default function Header() {
     return (
         <header className="header">
@@ -35,11 +16,11 @@ export default function Header() {
                         <h2>Gonçalves</h2>
                     </Link>
                 </div>
-                <li 
+                <li
                     className="btnMenu btnMenu_open">
                     <FiMenu className="buttonMenu"/>
                 </li>
-                <ul id="menu" className="menu">
+                <ul id="menu" className="menu ">
                     <div className="navigation">
                         <div className="logoBtnMenu">
                             <div className="maxWd">

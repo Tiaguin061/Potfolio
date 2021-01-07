@@ -10,7 +10,7 @@ export default function MediaMap() {
     const valuesMedias = [
         {
             classNames: 'icons card insta',
-            href:"https://instagram.com/tg001_xx",
+            href:"https://instagram.com/tiaguinho_gon1",
             icon: <FiInstagram />,
             name: 'Instagram',
             backgroundIcon: '#833AB4',
@@ -37,10 +37,10 @@ export default function MediaMap() {
             classNames: 'icons card discord',
             icon: <FaDiscord />,
             name: 'Discord',
-            nameTwo: 'Tiaguin061#2748',
+            href: 'https://discordapp.com/users/586186122611130368',
             backgroundIcon: '#7289da',
             borderBottom: '1px solid #7289da',
-            cursor: 'default'
+            cursor: 'pointer'
         },
     ]
 

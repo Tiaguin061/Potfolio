@@ -1,6 +1,7 @@
 .home .SectionMytragetory {
     width: 100%;
     padding-top: 3.2rem;
+    position: relative;
 }
 
 .home .SectionMytragetory .history {
