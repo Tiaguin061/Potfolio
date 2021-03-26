@@ -17,14 +17,13 @@ export const Content = styled.div`
   padding: 0 0 12px;
 
   h1 {
-    font-size: 52px;
+    font-size: 36px;
     padding-left: 16px;
     margin-bottom: 32px;
     filter: brightness(90%);
     border-left: 4px solid #d3e4ff;
-    max-width: 680px;
+    max-width: 560px;
     width: 100%;
-
   }
 
   section {

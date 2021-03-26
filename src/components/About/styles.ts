@@ -74,7 +74,7 @@ export const Content = styled.div`
       p {
         max-width: 600px;
         width: 100%;
-        font-size: 22px;
+        font-size: 1.1rem;
         font-weight: 300;
         filter: brightness(96%);
         letter-spacing: 0.7pt;

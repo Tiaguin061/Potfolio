@@ -51,7 +51,7 @@ export const Github = styled.div`
 
       p {
         margin-top: 1rem;
-        font-size: 22px;
+        font-size: 20px;
         max-width: 500px;
         filter: brightness(90%);
       }
@@ -106,7 +106,7 @@ export const SocialIcons = styled.div`
 
   p {
     margin: 0.5rem 0 1.2rem;
-    font-size: 22px;
+    font-size: 18px;
     max-width: 520px;
     word-wrap: break-word;
     filter: brightness(90%);

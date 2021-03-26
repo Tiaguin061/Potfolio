@@ -90,18 +90,8 @@ export const Card = styled.div`
     max-width: 100%;
 
     margin: 3rem 0 1rem;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
   }
 `;
-
-// .home .h1edit {
-//   font-size: 52px;
-//   padding-left: 16px;
-//   margin-bottom: 32px;
-//   filter: brightness(90%);
-//   border-left: 4px solid #d3e4ff;
-//   max-width: 680px;
-//   width: 100%;
-// }
