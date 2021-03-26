@@ -1,12 +1,14 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from '../pages/Home';
+import Home from '../pages/home';
 
-export default function Routes() {
+const Routes: React.FC = () => {
   return (
     <Switch>
       <Route path="/" exact component={Home} />
     </Switch>
   );
 }
+
+export default Routes
