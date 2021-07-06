@@ -26,21 +26,19 @@ export const Container = styled.div`
 
   > img {
     position: absolute;
-    max-width: 90%;
-    width: 700px;
-    right: 20px;
-    bottom: 0;
+    width: 100%;
+    top: 0;
     z-index: -1;
   }
 `;
 
 export const Content = styled.div`
-  width: 100%; 
+  width: 90%; 
   position: relative; 
   padding-bottom: 32px;
 
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 120px auto 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;  
@@ -56,13 +54,14 @@ export const Content = styled.div`
     div {
       display: flex;
       align-items:center;
-      justify-content:center;
+      justify-content: flex-start;
       flex-direction: column;
 
       h1 {
         margin-top: 24px;
         color: #d3e4ff;
-        font-size: 36px;
+        width: 100%;
+        font-size: 2.4rem;
         letter-spacing: 0.7pt;
 
         span {
@@ -78,14 +77,28 @@ export const Content = styled.div`
         font-weight: 300;
         filter: brightness(96%);
         letter-spacing: 0.7pt;
+        line-height: 1.8rem;
         text-align: left;
-        padding-bottom: 2rem;
-        margin-top: 0.6rem;
+        margin-top: 1rem;
 
         span {
           color: var(--color-orange);
         }
       }
+    }
+  }
+
+  @media(max-width: 960px) {
+    align-items: center;  
+    flex-direction: column;
+  }
+
+  @media(max-width: 480px) {
+    section div h1 {
+      font-size: 2rem;
+    }
+    section div p {
+      font-size: 1rem;
     }
   }
 `;
@@ -113,7 +126,7 @@ export const Profile = styled.div`
     align-items: center;
     justify-content: center;
     gap: 4px;
-    margin-top: 1rem;
+    margin-top: 1.6rem;
 
     a {
       padding: 4px;

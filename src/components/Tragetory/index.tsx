@@ -1,16 +1,15 @@
-import React, { useEffect } from 'react';
-
-import { Container, Content, Paragraphs } from './styles';
-
+import { useEffect } from 'react';
 import {BsArrowReturnRight} from 'react-icons/bs';
 import {TiArrowForwardOutline} from 'react-icons/ti';
-
-import code from '../../images/svgs/code.svg';
-import coding from '../../images/svgs/coding.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-const Tragetory: React.FC = () => {
+import code from '../../images/svgs/code.svg';
+import coding from '../../images/svgs/coding.svg';
+
+import { Container, Content, Paragraphs } from './styles';
+
+export function Tragetory() {
 	useEffect(() => {
 		Aos.init({duration: 1000});
 	}, []);
@@ -56,5 +55,3 @@ const Tragetory: React.FC = () => {
 		</Container>
 	);
 }
-
-export default Tragetory;
