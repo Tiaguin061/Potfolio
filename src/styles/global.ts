@@ -20,6 +20,24 @@ export default createGlobalStyle`
     width: 100%;
     height: 100vh;
     scroll-behavior: smooth;
+
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #db8625; 
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b16713; 
+    }
   }
 
   a {
@@ -39,4 +57,7 @@ export default createGlobalStyle`
     --color-rn: #5667f9;
     font-size: 1rem;
   }
+
+
 `;
+
